@@ -1,0 +1,240 @@
+<%- include("partials/header"); -%>
+
+        <!--Carousel-->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                
+            </div>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/c-img1.jpg" alt="Los Angeles" class="d-block w-100">
+                    <div class="carousel-caption d-block d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/c-img2.jpg" alt="Chicago" class="d-block w-100">
+                    <div class="carousel-caption d-block d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- Left and right controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Job Postings -->
+        <div class="container">
+            <div class="row text-center">
+                <h3 class="mt-4">
+                    Job Postings
+                </h3>
+
+            </div>
+            <hr>
+            <!-- Categories -->
+            <div class="categories">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </button>
+
+                    <div class="dropdown-menu ">
+                        <a class="dropdown-item btns" data-filter="software" href="#">Software Devoloper</a>
+                        <a class="dropdown-item btns" data-filter="frontend" href="#">FrontEnd</a>
+                        <a class="dropdown-item btns" data-filter="backend" href="#">Backend</a>
+                        <a class="dropdown-item btns" data-filter="fullstack" href="#">Full Stack</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item btns" data-filter="internship" href="#">Internships</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- slider -->
+        
+        <div class="slide-container">
+
+            
+            <section class="container p-0" id="slider">
+                
+                <div class="card col-sm-4 col-lg-3 col-8 internship">
+                    <div class="card-header">
+                        <h5 class="card-title">Internship</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/Internship"  class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 internship">
+                    <div class="card-header">
+                        <h5 class="card-title">Internship1</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/Internship1" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 internship">
+                    <div class="card-header">
+                        <h5 class="card-title">Internship2</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/Internship2" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 software">
+                    <div class="card-header">
+                        <h5 class="card-title">Software</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/Software" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 fullstack">
+                    <div class="card-header">
+                        <h5 class="card-title">FullStack</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/FullStack" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 fullstack">
+                    <div class="card-header">
+                        <h5 class="card-title">FullStack</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/FullStack" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 fullstack">
+                    <div class="card-header">
+                        <h5 class="card-title">FullStack</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/FullStack" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 frontend">
+                    <div class="card-header">
+                        <h5 class="card-title">FrontEnd</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/FrontEnd" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 frontend">
+                    <div class="card-header">
+                        <h5 class="card-title">FrontEnd</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/FrontEnd" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 backend">
+                    <div class="card-header">
+                        <h5 class="card-title">BackEnd</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="/BackEnd" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 backend">
+                    <div class="card-header">
+                        <h5 class="card-title">BackEnd</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="BackEnd" class="btn btn-secondary">Apply</a>
+                    </div>
+                </div>
+
+                <div class="card col-sm-4 col-lg-3 col-8 backend">
+                    <div class="card-header">
+                        <h5 class="card-title">BackEnd</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of
+                            the card's content.</p>
+                        <a href="BackEnd" class="btn btn-secondary">Apply</a>
+                    </div>
+                 </div>
+
+            </section>
+            
+        </div>
+
+        
+        <%- include("partials/footer"); -%>
+
+    </main>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+    <h1 class="text-center">Compose</h1>
+    <form action="/compose" method="post">
+        <div class="form-group mx-5">
+            <label for="jobtitle">Job Title</label>
+            <input type="text" name="jobtitle" id="jobtitle" class="form-control">
+            <label for="jobdetails">Job Details</label>
+            <textarea name="jobdetails" id="jobdetails" cols="80" rows="7" placeholder="Enter your text here"
+                class="form-control"></textarea>
+            <label for="jobdescription">Job Description</label>
+            <textarea name="jobdescription" id="jobdescription" cols="80" rows="7" placeholder="Enter your text here"
+                class="form-control"></textarea>
+
+        </div>
+        <div class="text-center my-3">
+            <button class="btn btn-primary" type="submit">Publish</button>
+        </div>
+    </form>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;1,400&family=Oswald:wght@300;400&display=swap');
+
+html,body{
+    
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: "Oswald";
+}
+
+.navbar{
+    font-family: "Oswald";
+    font-weight: 400;
+    background: rgb(235, 100, 21);
+    font-size: large;
+}
+
+.navbar-brand{
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: "Oswald";
+}
+
+.nav-item{
+    padding-right: 20px;
+}
+
+.box{
+    display: flex;
+}
+
+
+
+.center{
+    background: rgb(185, 183, 183);
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+input .btn{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+label{
+    font-weight: 600;
+}
+
+#postings{
+    margin: 5%;
+}
+
+.row{
+    text-align: center;
+}
+
+.postings{
+    margin-top: 2%;
+}
+
+.card{
+    text-align: left;
+}
+
+.card-body{
+    font-family:"Merriweather Sans";
+}
+
+.categories{
+    text-align: right;
+}
+
+input .textarea{
+    white-space: pre-wrap;
+}
+
+.slide-container{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.arrow{
+    width: 1rem;
+    margin: 0 1rem;
+}
+
+section .container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+section .card{
+    margin: 1%;
+    cursor: pointer;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+}
+
+section .card:hover{
+    transform: scale(1);
+}
+
+section::-webkit-scrollbar{
+    height: 5px;
+    border: 1px solid #d5d5d5;
+    background: #d5d5d5;
+    border-radius: 5px;
+}
+
+section::-webkit-scrollbar-track{
+    --webkit-box-shadow:inset 0 0 6px rgba(194, 181, 181, 0.3);
+    border-radius: 5px;
+}
+
+section::-webkit-scrollbar-thumb{
+    background-color: rgb(175, 184, 185);
+    outline: 1px solid #eee;
+    border-radius: 5px;
+}
+
+
+.footer{
+    background-color: rgba(54, 39, 39, 0.137);
+    color: black;
+    font-family:"Merriweather Sans" ;
+    font-size: smaller;
+}
+
+@media (max-width: 600px){
+    .slide-container{
+        padding: 0 5%;
+    }
+}
+
+@media(max-width: 700px){
+    .box{
+        display:block;
+    }
+    .form{
+        width: 80%;
+    }
+}

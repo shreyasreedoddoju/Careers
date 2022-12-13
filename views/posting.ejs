@@ -1,0 +1,67 @@
+<%- include("partials/header"); -%>
+        <section>
+            <div class="postingdetails container-fluid box col-12">
+                <div class="m-4">
+                    <div>
+                        
+                        
+                            <h2><%= title.jobtitle %></h2>
+                            <p><pre style="font-family: Arial;"><%= title.jobdetails %></pre>
+                            </p>
+                            <h5>Job Description</h5>
+                            <p><%= title.jobdescription %></p>
+                        
+                    </div>
+                </div>
+                <div class="container form col-sm-5 col-10 my-5">
+                    <h5 class="text-center">Apply Here</h5>
+                    <hr>
+                    <form action="/posting" method="post">
+
+                        <div class="form-group mb-3">
+                            <label for="jobtype">Job Title</label>
+                            <select name="jobtype" id="jobtype" class="form-select">
+                                <option value="<%= title.jobtitle %>"><%= title.jobtitle %></option>
+                            </select>
+                        </div> 
+                        <div class="form-group mb-3">
+                            <label for="name">Name</label>
+                            <input class="form-control mt-2" type="text" minlength="4" placeholder="Enter your name" name="name" id="name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input class="form-control mt-2" type="email" placeholder="Enter your Email Id" name="email"
+                                id="name" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="number">Contact Number</label>
+                            <input class="form-control mt-2" id="number" type="tel" pattern="[6-9]{1}[0-9]{5}[0-9]{4}"
+                                placeholder="Enter your Phone number" maxlength="10" name="number" autocomplete="off" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="file">Upload Resume/CV</label>
+                            <div class="card p-3 text-center">
+                                <header>
+                                    <b>Select files here</b>
+                                </header>
+                                <p>File Supported: PDF,TEXT, DOC, DOCX</p>
+                                <input class="btn btn-sm ms-auto" id="file" type="file" accept=".doc,.docx,.pdf"
+                               name="file" autocomplete="off" required>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="w-50 btn btn-primary" type="submit">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <%- include("partials/footer"); -%>
+
+    </main>
+</body>
+
+</html>
